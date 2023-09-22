@@ -50,6 +50,7 @@ class BOW2Tokenizer():
             seq_tokenized = self._tokenizer(sentence, sentence2,
                                             max_length=max_length,
                                             truncation=True,
+                                            padding=True,
                                             return_tensors="pt",
                                             return_attention_mask=True)
 
@@ -57,6 +58,7 @@ class BOW2Tokenizer():
             seq_tokenized = self._tokenizer(sentence,
                                             max_length=max_length,
                                             truncation=True,
+                                            padding=True,
                                             return_tensors="pt",
                                             return_attention_mask=True)
             #
